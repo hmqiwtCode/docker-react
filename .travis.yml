@@ -10,7 +10,6 @@ services:
   - docker
 
 before_install: 
-  - 'nvm install-latest-npm'
   - docker build -t hmqiwt/docker-react -f Dockerfile.dev .
 
 script: 
