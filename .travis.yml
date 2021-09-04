@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install: 
-  - docker build -t hmqiwtCode/docker-react -f Dockerfile.dev .
+  - docker build -t hmqiwt/docker-react -f Dockerfile.dev .
 
 script: 
-  - docker run hmqiwtCode/docker-react npm run test -- --coverage
+  - docker run hmqiwt/docker-react npm run test -- --coverage
