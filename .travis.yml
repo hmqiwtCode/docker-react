@@ -1,10 +1,6 @@
 language: node_js
 node_js:
-  - "11.8"
   - "10.15"
-  - "9.11"
-  - "8.15"
-  - "7.10"
 sudo: required
 services: 
   - docker
@@ -14,8 +10,4 @@ before_install:
 
 script: 
   - docker run hmqiwt/docker-react npm run test -- --coverage
-allow_failures:
-  - os: osx
-  - env: TEST=true ALLOW_FAILURE=true
-  - env: COVERAGE=true
-  - env: POSTTEST=true
+
